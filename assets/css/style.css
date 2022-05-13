@@ -1,13 +1,17 @@
+/*REFACTORING NOTES*/
+/*Used semantic tags for header, main, section, and aside, to replace divs*/
+/*Chanced ul li to a button structure, both for semantics and a cleaner design*/
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-
+/*Sets the background color for the whole site*/
 body {
     background-color: #d9dcd6;
 }
 
+/*Header section containing navigation, button, and link styles*/
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -51,6 +55,7 @@ p {
     font-size: 16px;
 }
 
+/*Banner section using <figure> since it's an image*/
 figure {
     height: 800px;
     width: 100%;
@@ -60,7 +65,7 @@ figure {
     background-position: center;
 }
 
-
+/*This section styles the Main content area*/
 main {   
     width: 75%;
     display: inline-block;
@@ -95,6 +100,7 @@ main section h2{
     margin-left: 25px;
 }
 
+/*This section contains Sidebar styles*/
 aside {
     margin-right: 20px;
     padding: 20px;
@@ -122,6 +128,7 @@ aside section img {
     max-width: 150px;
 }
 
+/*This section styles the footer*/
 footer {
     padding: 30px;
     clear: both;
